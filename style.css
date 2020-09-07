@@ -1,0 +1,96 @@
+html {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(
+    to bottom right,
+    rgba(44, 46, 173, 0.464),
+    rgb(12, 31, 199)
+  );
+  background-repeat: no-repeat;
+}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6,
+.box7,
+.box8,
+.box9,
+.box10 {
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+}
+
+.box1 {
+  border: none;
+}
+.box8,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6,
+.box7,
+.box9,
+.box10 {
+  border: solid 2px rgb(203, 226, 231);
+  animation: roll 240s linear infinite;
+  opacity: 0.4;
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(4500deg);
+  }
+}
+
+.box8 {
+  animation-delay: 0s;
+}
+.box2 {
+  animation-delay: 1s;
+}
+
+.box3 {
+  animation-delay: 2s;
+}
+
+.box4 {
+  animation-delay: 3s;
+}
+
+.box5 {
+  animation-delay: 4s;
+}
+
+.box6 {
+  animation-delay: 5s;
+}
+
+.box7 {
+  animation-delay: 6s;
+}
+.box9 {
+  animation-delay: 7s;
+}
+.box10 {
+  animation-delay: 8s;
+}
+
+p {
+  text-align: center;
+  color: white;
+  margin: 45% auto;
+}
